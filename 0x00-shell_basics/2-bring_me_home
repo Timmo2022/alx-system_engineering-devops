@@ -1,2 +1,2 @@
 #!/bin/bash
-chown HOME
+cd HOME/
