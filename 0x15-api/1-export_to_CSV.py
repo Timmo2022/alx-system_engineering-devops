@@ -5,7 +5,7 @@ from sys import argv
 
 
 if __name__ == '__main__':
-    url = 'https://jsonplaceholder.typicode.com/'
+    url = 'https://jsonplaceholder.typicode.com/todos/1'
     user_data = requests.get(url + 'users/{}'.format(argv[1])).json()
     user_tasks = requests.get(url + 'todos', params={'userId': argv[1]}).json()
     with open('{}.csv'.format(argv[1]), 'w') as f:
